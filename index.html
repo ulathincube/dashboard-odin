@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <form class="search-form">
+          <button class="search-button" type="submit">
+            <span class="material-icons"> search </span>
+          </button>
+          <input type="search" placeholder="Search" />
+        </form>
+        <article class="profile-info">
+          <span class="material-icons"> notifications_active </span>
+          <div class="avatar-container-small">
+            <img
+              src="images/avatars/morgan.jpg"
+              alt="user profile"
+              class="avatar-img-small"
+            />
+          </div>
+          <span class="avatar-name">Morgan Oakley</span>
+        </article>
+        <div class="hello">
+          <div class="avatar-container">
+            <img
+              src="images/avatars/morgan.jpg"
+              alt="User Avatar"
+              class="avatar-img"
+            />
+          </div>
+          <div class="text">
+            <p class="text-small">Hi, there</p>
+            <p class="text-big">Morgan Oakley</p>
+          </div>
+        </div>
+        <section class="nav-buttons">
+          <ul class="nav-buttons-list">
+            <a class="nav-button" href="/">New</a>
+            <a class="nav-button" href="/">Upload</a>
+            <a class="nav-button" href="/">Share</a>
+          </ul>
+        </section>
+      </header>
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <span class="material-icons big"> dashboard </span>
+          <span>Dashboard</span>
+        </div>
+        <ul class="sidebar-list">
+          <li class="sidebar-list-item">
+            <a class="sidebar-link" href="/">
+              <span class="material-icons"> home </span>
+              <span>Home</span>
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a class="sidebar-link" href="/">
+              <span class="material-icons"> account_box </span>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a class="sidebar-link" href="/">
+              <span class="material-icons"> chat_bubble </span>
+              <span>Messages</span>
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a class="sidebar-link" href="/">
+              <span class="material-icons"> access_time_filled </span>
+              <span>History</span>
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a class="sidebar-link" href="/">
+              <span class="material-icons"> assignment </span>
+              <span>Tasks</span>
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a class="sidebar-link" href="/">
+              <span class="material-icons"> groups </span>
+              <span>Communities</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="sidebar-list">
+          <li class="sidebar-list-item">
+            <a class="sidebar-link" href="/">
+              <span class="material-icons"> settings </span>
+              <span>Settings</span>
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a class="sidebar-link" href="/">
+              <span class="material-icons"> contact_support </span>
+              <span>Support</span>
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a class="sidebar-link" href="/">
+              <span class="material-icons"> gpp_good </span>
+              <span>Privacy</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <main class="main">
+        <section class="main-projects">
+          <h1 class="heading-main">Your Projects</h1>
+          <div class="project-cards">
+            <div class="card">
+              <section>
+                <h2>Super cool Project</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Possimus laborum quisquam voluptates qui eius, sint laudantium
+                  at eveniet nostrum aut.
+                </p>
+              </section>
+              <section class="project-icons">
+                <button class="project-button">
+                  <span class="material-icons"> star </span>
+                </button>
+                <button class="project-button">
+                  <span class="material-icons"> visibility </span>
+                </button>
+                <button class="project-button">
+                  <span class="material-icons"> share </span>
+                </button>
+              </section>
+            </div>
+            <div class="card">
+              <section>
+                <h2>Super cool Project</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Possimus laborum quisquam voluptates qui eius, sint laudantium
+                  at eveniet nostrum aut.
+                </p>
+              </section>
+              <section class="project-icons">
+                <button class="project-button">
+                  <span class="material-icons"> star </span>
+                </button>
+                <button class="project-button">
+                  <span class="material-icons"> visibility </span>
+                </button>
+                <button class="project-button">
+                  <span class="material-icons"> share </span>
+                </button>
+              </section>
+            </div>
+            <div class="card">
+              <section>
+                <h2>Super cool Project</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Possimus laborum quisquam voluptates qui eius, sint laudantium
+                  at eveniet nostrum aut.
+                </p>
+              </section>
+              <section class="project-icons">
+                <button class="project-button">
+                  <span class="material-icons"> star </span>
+                </button>
+                <button class="project-button">
+                  <span class="material-icons"> visibility </span>
+                </button>
+                <button class="project-button">
+                  <span class="material-icons"> share </span>
+                </button>
+              </section>
+            </div>
+            <div class="card">
+              <section>
+                <h2>Super cool Project</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Possimus laborum quisquam voluptates qui eius, sint laudantium
+                  at eveniet nostrum aut.
+                </p>
+              </section>
+              <section class="project-icons">
+                <button class="project-button">
+                  <span class="material-icons"> star </span>
+                </button>
+                <button class="project-button">
+                  <span class="material-icons"> visibility </span>
+                </button>
+                <button class="project-button">
+                  <span class="material-icons"> share </span>
+                </button>
+              </section>
+            </div>
+            <div class="card">
+              <section>
+                <h2>Super cool Project</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Possimus laborum quisquam voluptates qui eius, sint laudantium
+                  at eveniet nostrum aut.
+                </p>
+              </section>
+              <section class="project-icons">
+                <button class="project-button">
+                  <span class="material-icons"> star </span>
+                </button>
+                <button class="project-button">
+                  <span class="material-icons"> visibility </span>
+                </button>
+                <button class="project-button">
+                  <span class="material-icons"> share </span>
+                </button>
+              </section>
+            </div>
+            <div class="card">
+              <section>
+                <h2>Super cool Project</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Possimus laborum quisquam voluptates qui eius, sint laudantium
+                  at eveniet nostrum aut.
+                </p>
+              </section>
+              <section class="project-icons">
+                <button class="project-button">
+                  <span class="material-icons"> star </span>
+                </button>
+                <button class="project-button">
+                  <span class="material-icons"> visibility </span>
+                </button>
+                <button class="project-button">
+                  <span class="material-icons"> share </span>
+                </button>
+              </section>
+            </div>
+          </div>
+        </section>
+        <section class="announcement-details">
+          <div class="announcements">
+            <h2 class="heading-sub">Announcements</h2>
+            <div class="card-alt">
+              <ul class="card-list">
+                <li class="list-item">
+                  <h3>Site Maintenance</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Vitae, ut.
+                  </p>
+                </li>
+                <li class="list-item">
+                  <h3>Site Maintenance</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Vitae, ut.
+                  </p>
+                </li>
+                <li class="list-item">
+                  <h3>Site Maintenance</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Vitae, ut.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="announcements">
+            <h2 class="heading-sub">Trending</h2>
+            <div class="card-alt">
+              <ul class="card-list">
+                <li class="card-list-item">
+                  <div class="avatar-container-small">
+                    <img
+                      class="avatar-img-small"
+                      src="images/avatars/jessica.jpg"
+                      alt="User Avatar"
+                    />
+                  </div>
+                  <div>
+                    <h4>@jess</h4>
+                    <p>Super cool project</p>
+                  </div>
+                </li>
+
+                <li class="card-list-item">
+                  <div class="avatar-container-small">
+                    <img
+                      class="avatar-img-small"
+                      src="images/avatars/morgan.jpg"
+                      alt="User Avatar"
+                    />
+                  </div>
+                  <div>
+                    <h4>@morgan</h4>
+                    <p>Super cool project</p>
+                  </div>
+                </li>
+                <li class="card-list-item">
+                  <div class="avatar-container-small">
+                    <img
+                      class="avatar-img-small"
+                      src="images/avatars/patience.jpg"
+                      alt="User Avatar"
+                    />
+                  </div>
+                  <div>
+                    <h4>@patience</h4>
+                    <p>Super cool project</p>
+                  </div>
+                </li>
+                <li class="card-list-item">
+                  <div class="avatar-container-small">
+                    <img
+                      class="avatar-img-small"
+                      src="images/avatars/sarah.jpg"
+                      alt="User Avatar"
+                    />
+                  </div>
+                  <div>
+                    <h4>@sarah</h4>
+                    <p>Super cool project</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

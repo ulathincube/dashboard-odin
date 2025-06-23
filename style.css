@@ -1,0 +1,401 @@
+:root {
+  --main-color: hsl(200 10% 10%);
+  --highlight: hsl(200 10% 90%);
+  --text-dark: hsl(200 10% 15%);
+  --text-light: hsl(200 15% 95%);
+  --shadow: 2px 4px 4px hsl(200 10% 10% / 0.1);
+  --shadow-md: 4px 8px 8px hsl(200 10% 10% / 0.1);
+  --highlight-main: hsl(30 100% 50%);
+}
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  color: var(--text-dark);
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  font-family: 'Reddit Sans', system-ui, Helvetica, Arial, sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Material UI Setup */
+
+.material-icons,
+.material-icons-outlined {
+  font-size: 1.8rem;
+}
+
+.material-icons.big {
+  font-size: 4.8rem;
+}
+
+/* Page Styling */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 5fr;
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  display: grid;
+  gap: 1rem 0;
+  grid-template-columns: 3fr 1fr;
+  align-items: center;
+  grid-template-rows: 1fr 1fr;
+  grid-row: 1;
+  box-shadow: var(--shadow);
+  grid-column: 2 / -1;
+  padding: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.icon-big {
+  font-size: 4rem;
+  font-variation-settings: 'OPSZ' 40;
+}
+
+.header > * {
+  align-items: center;
+}
+
+.search-form {
+  grid-row: 1;
+  grid-column: 1;
+  display: flex;
+  align-items: center;
+}
+
+.search-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type='search'] {
+  background-color: var(--highlight);
+  border-radius: 0.25rem;
+  border: none;
+  outline: none;
+  color: var(--main-color);
+  width: 60%;
+  padding: 1rem;
+}
+
+.avatar-name {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.nav-buttons {
+  justify-self: end;
+}
+
+.nav-buttons-list {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.nav-button {
+  color: var(--text-light);
+  background-color: var(--main-color);
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: all 200ms ease-in-out;
+}
+
+.nav-button:hover {
+  background-color: var(--highlight-main);
+}
+
+.profile-info {
+  grid-row: 1;
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  grid-column: 2;
+}
+
+.avatar-container {
+  width: 5rem;
+  backface-visibility: hidden;
+  height: 5rem;
+  background-color: hsl(0, 0%, 30%);
+  border-radius: 50%;
+}
+
+.avatar-container-small {
+  width: 3rem;
+  height: 3rem;
+  backface-visibility: hidden;
+  background-color: hsl(0, 0%, 30%);
+  border-radius: 50%;
+}
+
+.hello {
+  grid-row: 2;
+  display: flex;
+  gap: 1rem;
+  margin-left: 0.5rem;
+}
+
+.text-small {
+  font-size: 1.4rem;
+}
+
+.text-big {
+  font-size: 2rem;
+}
+
+.sidebar {
+  background-color: var(--main-color);
+  font-weight: 400;
+  font-size: 1.6rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 1.5rem 3rem 2rem 3rem;
+  color: var(--text-light);
+  grid-row: 1 / -1;
+  grid-column: 1;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  grid-column: 2 / -1;
+  display: grid;
+  gap: 0 2rem;
+  grid-template-columns: 3fr 1fr;
+
+  grid-row: 2 / -1;
+  padding: 2rem;
+  padding-top: 1.5rem;
+}
+
+.project-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.heading-main,
+.heading-sub {
+  font-size: 2rem;
+  padding-left: 0.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.main-cards {
+  display: grid;
+  gap: 0 2rem;
+  grid-template-columns: 3fr 1fr;
+}
+
+.projects {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.announcements-cards {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+}
+
+.announcement-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+ul a {
+  color: white;
+  text-decoration: none;
+}
+
+.avatar-img,
+.avatar-img-small {
+  width: 100%;
+  object-fit: cover;
+  /* image-rendering: smooth; */
+  height: 100%;
+  border-radius: 50%;
+}
+
+.card {
+  padding: 1.5rem 2rem 3rem;
+  background-color: var(--main-color);
+  color: var(--text-light);
+  box-shadow: var(--shadow-md);
+  border-radius: 0.5rem;
+  border-left: 0.5rem solid var(--highlight-main);
+}
+
+.card-alt {
+  padding: 1.5rem;
+  padding-bottom: 2rem;
+  background-color: var(--main-color);
+  color: var(--text-light);
+  box-shadow: var(--shadow-md);
+  border-radius: 0.5rem;
+}
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.list-item {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--highlight);
+}
+
+.list-item:first-child {
+  padding-top: 0;
+}
+
+.list-item:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.card-list-item {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.sidebar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sidebar-link {
+  display: flex;
+  font-size: 1.4rem;
+  align-items: center;
+  gap: 1rem;
+  transition: all 200ms ease-out;
+}
+
+.sidebar-link:hover {
+  color: var(--highlight-main);
+}
+
+.project-icons {
+  display: flex;
+  margin-top: 1.5rem;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.project-button {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--highlight);
+  cursor: pointer;
+  transition: all 300ms ease;
+
+  &:hover {
+    color: var(--highlight-main);
+  }
+}
